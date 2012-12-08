@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="1.1.0-rc4" sequence="0" timestamp="-1" analysisTimestamp="1158125262118" release="">
+  <Project filename="&lt;&lt;unnamed project&gt;&gt;">
+    <Jar>C:\dev\eclipsehome\workspace\javatest\bin\com\yellowaxe\cglibtest\CglibTester.class</Jar>
+    <Jar>C:\dev\eclipsehome\workspace\javatest\bin\com\yellowaxe\cglibtest\MyClassFactory.class</Jar>
+    <Jar>C:\dev\eclipsehome\workspace\javatest\bin\com\yellowaxe\cglibtest\MyClassNew.class</Jar>
+    <Jar>C:\dev\eclipsehome\workspace\javatest\bin\com\yellowaxe\cglibtest\MyClassOrig.class</Jar>
+    <Jar>C:\dev\eclipsehome\workspace\javatest\bin\com\yellowaxe\pseudoesn\PESNConverter.class</Jar>
+    <Jar>C:\dev\eclipsehome\workspace\javatest\bin\com\yellowaxe\serializationtest\SObject.class</Jar>
+    <Jar>C:\dev\eclipsehome\workspace\javatest\bin\com\yellowaxe\serializationtest\SerialTest.class</Jar>
+    <Jar>C:\dev\eclipsehome\workspace\javatest\bin\com\yellowaxe\streamtest\MyOutputStream.class</Jar>
+    <Jar>C:\dev\eclipsehome\workspace\javatest\bin\com\yellowaxe\streamtest\StreamTest.class</Jar>
+    <Jar>C:\dev\eclipsehome\workspace\javatest\bin\com\yellowaxe\testing\DaylightError.class</Jar>
+    <Jar>C:\dev\eclipsehome\workspace\javatest\bin\com\yellowaxe\testing\StackOverflow.class</Jar>
+    <Jar>C:\dev\eclipsehome\workspace\javatest\bin\com\yellowaxe\testing\TomcatDeployTesting.class</Jar>
+    <Jar>C:\dev\eclipsehome\workspace\javatest\bin\com\yellowaxe\tracestack\Callback.class</Jar>
+    <Jar>C:\dev\eclipsehome\workspace\javatest\bin\com\yellowaxe\tracestack\MainProg$1.class</Jar>
+    <Jar>C:\dev\eclipsehome\workspace\javatest\bin\com\yellowaxe\tracestack\MainProg$2.class</Jar>
+    <Jar>C:\dev\eclipsehome\workspace\javatest\bin\com\yellowaxe\tracestack\MainProg$3.class</Jar>
+    <Jar>C:\dev\eclipsehome\workspace\javatest\bin\com\yellowaxe\tracestack\MainProg$4.class</Jar>
+    <Jar>C:\dev\eclipsehome\workspace\javatest\bin\com\yellowaxe\tracestack\MainProg.class</Jar>
+    <Jar>C:\dev\eclipsehome\workspace\javatest\bin\com\yellowaxe\tracestack\Plugin.class</Jar>
+    <Jar>C:\dev\eclipsehome\workspace\javatest\bin\com\yellowaxe\tracestack\PluginImp1.class</Jar>
+    <Jar>C:\dev\eclipsehome\workspace\javatest\bin\com\yellowaxe\tracestack\PluginImp2.class</Jar>
+    <AuxClasspathEntry>C:\dev\eclipsehome\workspace\javatest\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\dev\eclipsehome\workspace\javatest\lib\commons-logging-1.0.4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\dev\eclipsehome\workspace\javatest\lib\asm-2.2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\dev\eclipsehome\workspace\javatest\lib\asm-attrs-2.2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\dev\eclipsehome\workspace\javatest\lib\asm-util-2.2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\dev\eclipsehome\workspace\javatest\lib\cglib-nodep-2.1_3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\dev\eclipsehome\workspace\javatest\lib\log4j-1.2.13.jar</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="DM_CONVERT_CASE" priority="3" abbrev="Dm" category="I18N">
+    <Class classname="com.yellowaxe.pseudoesn.PESNConverter">
+      <SourceLine classname="com.yellowaxe.pseudoesn.PESNConverter" sourcefile="PESNConverter.java" sourcepath="com/yellowaxe/pseudoesn/PESNConverter.java"/>
+    </Class>
+    <Method classname="com.yellowaxe.pseudoesn.PESNConverter" name="main" signature="([Ljava/lang/String;)V" isStatic="true">
+      <SourceLine classname="com.yellowaxe.pseudoesn.PESNConverter" start="29" end="87" startBytecode="0" endBytecode="449" sourcefile="PESNConverter.java" sourcepath="com/yellowaxe/pseudoesn/PESNConverter.java"/>
+    </Method>
+    <SourceLine classname="com.yellowaxe.pseudoesn.PESNConverter" start="74" end="74" startBytecode="331" endBytecode="331" sourcefile="PESNConverter.java" sourcepath="com/yellowaxe/pseudoesn/PESNConverter.java"/>
+  </BugInstance>
+  <BugInstance type="DM_FP_NUMBER_CTOR" priority="3" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="com.yellowaxe.serializationtest.SObject">
+      <SourceLine classname="com.yellowaxe.serializationtest.SObject" sourcefile="SObject.java" sourcepath="com/yellowaxe/serializationtest/SObject.java"/>
+    </Class>
+    <Method classname="com.yellowaxe.serializationtest.SObject" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="com.yellowaxe.serializationtest.SObject" start="7" end="7" startBytecode="0" endBytecode="38" sourcefile="SObject.java" sourcepath="com/yellowaxe/serializationtest/SObject.java"/>
+    </Method>
+    <SourceLine classname="com.yellowaxe.serializationtest.SObject" start="28" end="28" startBytecode="25" endBytecode="25" sourcefile="SObject.java" sourcepath="com/yellowaxe/serializationtest/SObject.java"/>
+    <String value="Double(double)"/>
+    <String value="Double.valueOf(double)"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="com.yellowaxe.serializationtest.SObject">
+      <SourceLine classname="com.yellowaxe.serializationtest.SObject" sourcefile="SObject.java" sourcepath="com/yellowaxe/serializationtest/SObject.java"/>
+    </Class>
+    <Method classname="com.yellowaxe.serializationtest.SObject" name="&lt;clinit&gt;" signature="()V" isStatic="true">
+      <SourceLine classname="com.yellowaxe.serializationtest.SObject" start="16" end="7" startBytecode="0" endBytecode="52" sourcefile="SObject.java" sourcepath="com/yellowaxe/serializationtest/SObject.java"/>
+    </Method>
+    <SourceLine classname="com.yellowaxe.serializationtest.SObject" start="18" end="18" startBytecode="26" endBytecode="26" sourcefile="SObject.java" sourcepath="com/yellowaxe/serializationtest/SObject.java"/>
+    <String value="Integer(int)"/>
+    <String value="Integer.valueOf(int)"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="com.yellowaxe.serializationtest.SObject">
+      <SourceLine classname="com.yellowaxe.serializationtest.SObject" sourcefile="SObject.java" sourcepath="com/yellowaxe/serializationtest/SObject.java"/>
+    </Class>
+    <Method classname="com.yellowaxe.serializationtest.SObject" name="&lt;clinit&gt;" signature="()V" isStatic="true">
+      <SourceLine classname="com.yellowaxe.serializationtest.SObject" start="16" end="7" startBytecode="0" endBytecode="52" sourcefile="SObject.java" sourcepath="com/yellowaxe/serializationtest/SObject.java"/>
+    </Method>
+    <SourceLine classname="com.yellowaxe.serializationtest.SObject" start="19" end="19" startBytecode="43" endBytecode="43" sourcefile="SObject.java" sourcepath="com/yellowaxe/serializationtest/SObject.java"/>
+    <String value="Integer(int)"/>
+    <String value="Integer.valueOf(int)"/>
+  </BugInstance>
+  <BugInstance type="DM_NUMBER_CTOR" priority="2" abbrev="Dm" category="PERFORMANCE">
+    <Class classname="com.yellowaxe.serializationtest.SObject">
+      <SourceLine classname="com.yellowaxe.serializationtest.SObject" sourcefile="SObject.java" sourcepath="com/yellowaxe/serializationtest/SObject.java"/>
+    </Class>
+    <Method classname="com.yellowaxe.serializationtest.SObject" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="com.yellowaxe.serializationtest.SObject" start="7" end="7" startBytecode="0" endBytecode="38" sourcefile="SObject.java" sourcepath="com/yellowaxe/serializationtest/SObject.java"/>
+    </Method>
+    <SourceLine classname="com.yellowaxe.serializationtest.SObject" start="22" end="22" startBytecode="11" endBytecode="11" sourcefile="SObject.java" sourcepath="com/yellowaxe/serializationtest/SObject.java"/>
+    <String value="Integer(int)"/>
+    <String value="Integer.valueOf(int)"/>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="1" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="com.yellowaxe.serializationtest.SObject">
+      <SourceLine classname="com.yellowaxe.serializationtest.SObject" sourcefile="SObject.java" sourcepath="com/yellowaxe/serializationtest/SObject.java"/>
+    </Class>
+    <Field classname="com.yellowaxe.serializationtest.SObject" name="dval" signature="Ljava/lang/Double;" isStatic="false">
+      <SourceLine classname="com.yellowaxe.serializationtest.SObject" sourcefile="SObject.java" sourcepath="com/yellowaxe/serializationtest/SObject.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_NOT_RESTORED" priority="1" abbrev="Se" category="BAD_PRACTICE">
+    <Class classname="com.yellowaxe.serializationtest.SObject">
+      <SourceLine classname="com.yellowaxe.serializationtest.SObject" sourcefile="SObject.java" sourcepath="com/yellowaxe/serializationtest/SObject.java"/>
+    </Class>
+    <Field classname="com.yellowaxe.serializationtest.SObject" name="pdval" signature="D" isStatic="false">
+      <SourceLine classname="com.yellowaxe.serializationtest.SObject" sourcefile="SObject.java" sourcepath="com/yellowaxe/serializationtest/SObject.java"/>
+    </Field>
+  </BugInstance>
+  <BugInstance type="IL_INFINITE_RECURSIVE_LOOP" priority="1" abbrev="IL" category="CORRECTNESS">
+    <Class classname="com.yellowaxe.testing.StackOverflow">
+      <SourceLine classname="com.yellowaxe.testing.StackOverflow" sourcefile="StackOverflow.java" sourcepath="com/yellowaxe/testing/StackOverflow.java"/>
+    </Class>
+    <Method classname="com.yellowaxe.testing.StackOverflow" name="foobar" signature="()V" isStatic="true">
+      <SourceLine classname="com.yellowaxe.testing.StackOverflow" start="21" end="22" startBytecode="0" endBytecode="3" sourcefile="StackOverflow.java" sourcepath="com/yellowaxe/testing/StackOverflow.java"/>
+    </Method>
+    <SourceLine classname="com.yellowaxe.testing.StackOverflow" start="21" end="21" startBytecode="0" endBytecode="0" sourcefile="StackOverflow.java" sourcepath="com/yellowaxe/testing/StackOverflow.java"/>
+  </BugInstance>
+  <Errors></Errors>
+  <FindBugsSummary timestamp="Tue, 12 Sep 2006 16:58:47 -0500" total_classes="0" total_bugs="8" total_size="0" num_packages="3" cpu_seconds="0.09" clock_seconds="0.11" peak_mbytes="145.30" gc_seconds="0.00" priority_3="2" priority_2="3" priority_1="3">
+    <PackageStats package="com.yellowaxe.pseudoesn" total_bugs="1" total_types="1" total_size="0" priority_3="1">
+      <ClassStats class="com.yellowaxe.pseudoesn.PESNConverter" interface="false" size="0" bugs="1" priority_3="1"/>
+    </PackageStats>
+    <PackageStats package="com.yellowaxe.serializationtest" total_bugs="6" total_types="1" total_size="0" priority_3="1" priority_2="3" priority_1="2">
+      <ClassStats class="com.yellowaxe.serializationtest.SObject" interface="false" size="0" bugs="6" priority_3="1" priority_2="3" priority_1="2"/>
+    </PackageStats>
+    <PackageStats package="com.yellowaxe.testing" total_bugs="1" total_types="1" total_size="0" priority_1="1">
+      <ClassStats class="com.yellowaxe.testing.StackOverflow" interface="false" size="0" bugs="1" priority_1="1"/>
+    </PackageStats>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>

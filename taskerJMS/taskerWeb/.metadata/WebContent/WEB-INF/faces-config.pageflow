@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf12338101157960" configfile="/taskerWeb/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="listTasks" x="312" y="228" id="pf12338104753212" referenceLink="//@navigationRule.2/@navigationCase.1/@toViewId|" outlinks="pf123381104185812 pf123381104185813" inlinks="pf12338107955495 pf123381109941917" path="/listTasks.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="index" x="252" y="72" id="pf12338107955496" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf12338107955495 pf123381104185814" path="/index.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="errors" x="552" y="84" id="pf123381104185815" referenceLink="//@navigationRule.2/@navigationCase.1/@toViewId|" inlinks="pf123381104185814 pf123381104185813 pf123381109941918" path="/errors.jsp"/>
+  <nodes xsi:type="pageflow:PFPage" name="editTasks" x="516" y="348" id="pf123381104185816" referenceLink="//@navigationRule.2/@navigationCase.1/@toViewId|" outlinks="pf123381109941918 pf123381109941917 pf123388899930219" inlinks="pf123381104185812 pf123388899930219" path="/editTasks.jsp"/>
+  <links id="pf12338107955495" target="pf12338104753212" source="pf12338107955496" outcome="list"/>
+  <links id="pf123381104185814" target="pf123381104185815" source="pf12338107955496" outcome="error"/>
+  <links id="pf123381104185812" target="pf123381104185816" source="pf12338104753212" outcome="edit"/>
+  <links id="pf123381104185813" target="pf123381104185815" source="pf12338104753212" outcome="error"/>
+  <links id="pf123381109941918" target="pf123381104185815" source="pf123381104185816" outcome="error"/>
+  <links id="pf123381109941917" target="pf12338104753212" source="pf123381104185816" outcome="done"/>
+  <links id="pf123388899930219" target="pf123381104185816" source="pf123381104185816" outcome="again"/>
+</pageflow:Pageflow>

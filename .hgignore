@@ -1,0 +1,10 @@
+glob:*.class
+
+glob:bin
+glob:obj
+
+glob:*.user
+glob:*.suo
+glob:*.sln.cache
+glob:_ReSharper.*
+

@@ -1,0 +1,23 @@
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="NHibernateTest" namespace="NHibernateTest.Entities" >
+
+  <class name="Product" table="Product">
+    
+    <id name="Id" type="Int32" column="Id">
+      <generator class="identity" />
+    </id>
+    
+    <property name="Name" type="String">
+      <column name="Name" />
+    </property>
+    
+    <property name="Price" type="Double">
+      <column name="Price" />
+    </property>
+    
+    <bag name="StoresStockedIn" cascade="all" inverse="true" table="StoreProduct">
+      <key column="Product_id" />
+      <many-to-many column="Store_id" class="Store" />
+    </bag>
+    
+  </class>
+</hibernate-mapping>

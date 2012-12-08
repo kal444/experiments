@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<faces-config
+    xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-facesconfig_1_2.xsd"
+    version="1.2">
+	<managed-bean>
+		<managed-bean-name>taskBean</managed-bean-name>
+		<managed-bean-class>com.yellowaxe.tasker.web.TaskBean</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+	<managed-bean>
+		<managed-bean-name>taskerHandler</managed-bean-name>
+		<managed-bean-class>com.yellowaxe.tasker.web.TaskerHandler</managed-bean-class>
+		<managed-bean-scope>request</managed-bean-scope>
+	</managed-bean>
+    
+    <navigation-rule>
+
+    	<from-view-id>/index.jsp</from-view-id>
+    	<navigation-case>
+    		<from-outcome>list</from-outcome>
+    		<to-view-id>/listTasks.jsp</to-view-id>
+    	</navigation-case>
+    	<navigation-case>
+    		<from-outcome>error</from-outcome>
+    		<to-view-id>/errors.jsp</to-view-id>
+    	</navigation-case>
+
+    </navigation-rule>
+    
+    <navigation-rule>
+    	
+    	<from-view-id>/listTasks.jsp</from-view-id>
+    	<navigation-case>
+    		<from-outcome>edit</from-outcome>
+    		<to-view-id>/editTasks.jsp</to-view-id>
+    	</navigation-case>
+    	<navigation-case>
+    		<from-outcome>error</from-outcome>
+    		<to-view-id>/errors.jsp</to-view-id>
+    	</navigation-case>
+    	
+    </navigation-rule>
+
+    <navigation-rule>
+    	
+    	<from-view-id>/editTasks.jsp</from-view-id>
+    	<navigation-case>
+    		<from-outcome>done</from-outcome>
+    		<to-view-id>/listTasks.jsp</to-view-id>
+    	</navigation-case>
+    	<navigation-case>
+    		<from-outcome>again</from-outcome>
+    		<to-view-id>/editTasks.jsp</to-view-id>
+    	</navigation-case>
+    	<navigation-case>
+    		<from-outcome>error</from-outcome>
+    		<to-view-id>/errors.jsp</to-view-id>
+    	</navigation-case>
+    	
+    </navigation-rule>
+
+</faces-config>

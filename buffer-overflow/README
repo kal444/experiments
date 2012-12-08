@@ -1,0 +1,8 @@
+crash.c : this is the main program that read a line using gets(), very unsafe.
+pchar.c : outputs one char... will be used as the loaded code.
+data : input stream file, use with "./crash < data".
+       This file is filled with "A*????XXXX"
+       A* = filler data to overflow char buf[11].
+       ???? = little-endian format 32-bit address, currently points back to
+              main ()
+       XXXX = filler data to be replaced with assembled code, ie. pchar

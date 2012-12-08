@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="1.1.0-rc4" sequence="0" timestamp="-1" analysisTimestamp="1158125292672" release="">
+  <Project filename="&lt;&lt;unnamed project&gt;&gt;">
+    <Jar>C:\dev\eclipsehome\workspace\groovytest\bin-groovy\com\yellowaxe\groovyTest\GroovyTest.class</Jar>
+    <AuxClasspathEntry>C:\dev\eclipsehome\workspace\groovytest\bin</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\dev\eclipsehome\others\eclipse\plugins\org.codehaus.groovy.eclipse_1.0.0.20060905\lib\commons-io-1.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\dev\eclipsehome\others\eclipse\plugins\org.codehaus.groovy.eclipse_1.0.0.20060905\lib\commons-lang-2.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\dev\eclipsehome\others\eclipse\plugins\org.codehaus.groovy.eclipse_1.0.0.20060905\lib\groovy-all-1.0-JSR-06.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\dev\eclipsehome\workspace\groovytest\bin-groovy</AuxClasspathEntry>
+  </Project>
+  <BugInstance type="MS_SHOULD_BE_FINAL" priority="1" abbrev="MS" category="MALICIOUS_CODE">
+    <Class classname="com.yellowaxe.groovyTest.GroovyTest">
+      <SourceLine classname="com.yellowaxe.groovyTest.GroovyTest" sourcefile="GroovyTest.groovy" sourcepath="com/yellowaxe/groovyTest/GroovyTest.groovy"/>
+    </Class>
+    <Field classname="com.yellowaxe.groovyTest.GroovyTest" name="__timeStamp" signature="Ljava.lang.Long;" isStatic="true">
+      <SourceLine classname="com.yellowaxe.groovyTest.GroovyTest" sourcefile="GroovyTest.groovy" sourcepath="com/yellowaxe/groovyTest/GroovyTest.groovy"/>
+    </Field>
+    <SourceLine classname="com.yellowaxe.groovyTest.GroovyTest" startBytecode="14" endBytecode="14" sourcefile="GroovyTest.groovy" sourcepath="com/yellowaxe/groovyTest/GroovyTest.groovy"/>
+  </BugInstance>
+  <BugInstance type="SE_TRANSIENT_FIELD_OF_NONSERIALIZABLE_CLASS" priority="2" abbrev="Se" category="STYLE">
+    <Class classname="com.yellowaxe.groovyTest.GroovyTest">
+      <SourceLine classname="com.yellowaxe.groovyTest.GroovyTest" sourcefile="GroovyTest.groovy" sourcepath="com/yellowaxe/groovyTest/GroovyTest.groovy"/>
+    </Class>
+    <Field classname="com.yellowaxe.groovyTest.GroovyTest" name="metaClass" signature="Lgroovy/lang/MetaClass;" isStatic="false">
+      <SourceLine classname="com.yellowaxe.groovyTest.GroovyTest" sourcefile="GroovyTest.groovy" sourcepath="com/yellowaxe/groovyTest/GroovyTest.groovy"/>
+    </Field>
+  </BugInstance>
+  <Errors></Errors>
+  <FindBugsSummary timestamp="Wed, 13 Sep 2006 00:28:12 -0500" total_classes="0" total_bugs="0" total_size="0" num_packages="0" cpu_seconds="0.01" clock_seconds="0.01" peak_mbytes="146.49" gc_seconds="0.00"></FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History></History>
+</BugCollection>
