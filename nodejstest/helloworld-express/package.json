@@ -1,0 +1,10 @@
+{
+  "name": "express-test",
+  "version": "0.0.1",
+  "description": "just a hello world",
+  "main": "hello.js",
+  "dependencies": 
+  {
+      "express": ">=4.0.0"
+  }
+}
