@@ -1,6 +1,9 @@
-bin
-gen
-obj
+.DS_Store
+.idea/
+target/
+bin/
+gen/
+obj/
 *.user
 *.suo
 _ReSharper.*
