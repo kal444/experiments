@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-3.1.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="dataSource" class="bitronix.tm.resource.jdbc.PoolingDataSource" init-method="init"
+          destroy-method="close">
+        <property name="className" value="org.h2.jdbcx.JdbcDataSource"/>
+        <property name="uniqueName" value="#{T(java.util.UUID).randomUUID().toString()}"/>
+        <property name="minPoolSize" value="1"/>
+        <property name="maxPoolSize" value="5"/>
+        <property name="allowLocalTransactions" value="true"/>
+        <property name="driverProperties">
+            <props>
+                <prop key="URL">jdbc:h2:mem:test_db;AUTOCOMMIT=OFF;LOCK_MODE=3;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+                </prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>

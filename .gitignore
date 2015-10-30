@@ -1,13 +1,14 @@
 .DS_Store
 .idea/
-target/
 bin/
+target/
 gen/
 obj/
 node_modules/
+*.class
+*.iml
 *.user
 *.suo
-_ReSharper.*
 *.sln.cache
-*.class
+_ReSharper.*
 *.swp

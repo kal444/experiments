@@ -1,0 +1,58 @@
+<?xml version="1.0"  encoding="ISO-8859-1"?>
+<!DOCTYPE Configure PUBLIC "-//Mort Bay Consulting//DTD Configure//EN" "http://www.eclipse.org/jetty/configure.dtd">
+
+<Configure class="org.eclipse.jetty.webapp.WebAppContext">
+
+    <!--
+    <Call id="bitronixConfiguration" name="getConfiguration" class="bitronix.tm.TransactionManagerServices"/>
+    <Call id="bitronixTransactionManager" name="getTransactionManager" class="bitronix.tm.TransactionManagerServices"/>
+    
+    <New id="db" class="bitronix.tm.resource.jdbc.PoolingDataSource">
+        <Set name="className">org.h2.jdbcx.JdbcDataSource</Set>
+        <Set name="uniqueName">h2</Set>
+        <Set name="minPoolSize">1</Set>
+        <Set name="minPoolSize">5</Set>
+        <Set name="allowLocalTransactions">true</Set>
+        <Set name="driverProperties">
+            <New class="java.util.Properties">
+                <Call name="setProperty">
+                    <Arg>URL</Arg>
+                    <Arg>jdbc:h2:mem:test_db;AUTOCOMMIT=OFF;LOCK_MODE=3;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE</Arg>
+                </Call>
+            </New>
+        </Set>
+    </New>
+
+    <New id="jdbc.dataSource" class="org.eclipse.jetty.plus.jndi.Resource">
+        <Arg>jdbc/dataSource</Arg>
+        <Arg>
+            <Ref id="db"/>
+        </Arg>
+    </New>
+
+    <New id="transactionManager" class="org.eclipse.jetty.plus.jndi.Transaction">
+        <Arg>
+            <Ref id="bitronixTransactionManager"/>
+        </Arg>
+    </New>
+
+    <New id="jms.connectionFactory" class="org.eclipse.jetty.plus.jndi.Resource">
+        <Arg>jms/connectionFactory</Arg>
+        <Arg>
+            <New class="org.apache.activemq.ActiveMQConnectionFactory">
+                <Arg>vm://localhost?broker.persistent=false</Arg>
+            </New>
+        </Arg>
+    </New>
+
+    <New id="jms.queue" class="org.eclipse.jetty.plus.jndi.Resource">
+        <Arg>jms/queue</Arg>
+        <Arg>
+            <New class="org.apache.activemq.command.ActiveMQQueue">
+                <Arg>queue</Arg>
+            </New>
+        </Arg>
+    </New>
+    -->
+
+</Configure>

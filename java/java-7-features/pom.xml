@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.yellowaxe</groupId>
+    <artifactId>java-7-features</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+    <description>
+        This project showcases a list of Java7 features:
+
+        Strings in switch
+        Automatic resource management in try-statement
+        Improved type inference for generic instance creation, aka the diamond operator
+        Binary integer literals
+        Allowing underscores in numeric literals
+        Catching multiple exception types and rethrowing exceptions with improved type checking
+
+        Concurrency utilities under JSR 166
+        New file I/O library to enhance platform independence and add support for metadata and symbolic links. The new packages are java.nio.file and java.nio.file.attribute
+        Timsort is used to sort collections and arrays of objects instead of merge sort
+    </description>
+
+</project>
